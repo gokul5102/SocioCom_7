@@ -1,0 +1,99 @@
+.background{
+  margin-top: 100px;
+}
+
+.else_page{
+  width: 250px;
+  font-size: 17px;
+}
+
+.title{
+  margin-top:100px;
+  text-align: center;
+  width: 500px;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.social_media{
+  margin-top: 140px;
+  margin-left: 160px;
+  width: 550px;
+}
+
+.social_med_link{
+  text-decoration: none;color:white;
+}
+
+.social_media button{
+  width: 60%;
+  color: white;
+  font-size: 15px;
+  padding: 15px;
+  margin: 10px 0px;
+  border: none;
+  cursor: pointer;
+}
+
+.Facebook{
+  background-color: #3b5998;
+}
+
+.Gmail{
+  background-color: #4285F4;
+}
+
+.container {
+  padding: 25px;
+  width: 550px;
+  margin-top: -230px;
+  margin-left: 700px;
+  height: 530px;
+  border-left: 2px solid #000080;
+}
+
+.first_input{
+  margin-top: 0px;
+}
+
+.container input[type=text], .container input[type=password], .container input[type=number], .container input[type=email] {
+  border:none;
+  width:400px;
+  font-size:20px;
+  margin: 8px;
+  padding: 12px 20px;
+  border-bottom: 2px solid black;
+}
+
+.Inflencer{
+  display: none;
+}
+
+label, select{
+  font-size:20px;
+  margin: 18px;
+  line-height: 40px;
+  padding: 12px 20px;
+}
+
+select{
+  border: 1px solid black;
+  width: 250px;
+}
+
+.log_but {
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 22px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  width:150px;
+  border-radius:20px;
+  color: black;
+  margin-left:30px;
+  border: 2px solid #4285F4;
+}
+
+.log_but:hover {
+  background-c

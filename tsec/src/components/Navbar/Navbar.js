@@ -35,19 +35,19 @@ const Navbar = () => {
           style={{
             textDecoration: "none",
             color: "white",
-            fontSize: "25px",
-            fontFamily: "cursive",
+            fontSize: "22px",
+            fontFamily: "Poppins,sans-serif",
           }}
         >
           Home
         </Link>
-        <Link
+        {/*  <Link
           to="/watchcontent"
           style={{
             textDecoration: "none",
             color: "white",
-            fontSize: "25px",
-            fontFamily: "cursive",
+            fontSize: "22px",
+            fontFamily: "Poppins,sans-serif",
           }}
         >
           Watch Content
@@ -57,9 +57,8 @@ const Navbar = () => {
           style={{
             textDecoration: "none",
             color: "white",
-            fontSize: "25px",
-            fontSize: "25px",
-            fontFamily: "cursive",
+            fontSize: "22px",
+            fontFamily: "Poppins,sans-serif",
           }}
         >
           Upload Content
@@ -69,9 +68,8 @@ const Navbar = () => {
           style={{
             textDecoration: "none",
             color: "white",
-            fontSize: "25px",
-            fontSize: "25px",
-            fontFamily: "cursive",
+            fontSize: "22px",
+            fontFamily: "Poppins,sans-serif",
           }}
         >
           Log In
@@ -81,14 +79,14 @@ const Navbar = () => {
           style={{
             textDecoration: "none",
             color: "white",
-            fontSize: "25px",
-            fontFamily: "cursive",
+            fontSize: "22px",
+            fontFamily: "Poppins,sans-serif",
           }}
         >
           Sign Up
-        </Link>
+        </Link> */}
       </header>
-    </Fragment>
+    </Fragment >
   );
 };
 

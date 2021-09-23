@@ -1,6 +1,79 @@
-img {
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
+/* Image */
+.image_section{
+  position: relative;
+  font-family: Arial;
 }
 
+.image_section img {
+  width: 100%;
+  opacity: 0.9;
+}
+
+.text_on_image{
+  position: absolute;
+  bottom: 150px;
+  left: 80px;
+  color: white;
+  padding: 40px;
+}
+
+.text_on_image p{
+  font-size: 28px;
+}
+
+.text_on_image h1{
+  font-size: 70px;
+}
+
+.text_on_image button{
+  border: none;
+  border-radius: 10px;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: #003f8c;
+  border: 1px solid #003f8c;
+  text-align: center;
+  cursor: pointer;
+  font-size: 25px;
+  margin-left: 40px;
+}
+
+/* Services Section */
+.services h1{
+  font-size: 60px;
+  text-align: center;
+}
+
+.video_content_info, .ecommerce_info{
+  margin: 100px;
+  padding: 50px;
+  border-radius: 25px;
+  border: 2px solid gray;
+  box-shadow: 10px 10px #888888;
+}
+
+.video_content_info img, .ecommerce_info img{
+  width:50%;
+  float: right;
+}
+
+.ecommerce_info img{
+  float: left;
+}
+
+.video_content_text h1, .ecommerce_info h1{
+  font-size: 40px;
+}
+
+.video_content_text p, .ecommerce_text p{
+  font-size: 20px;
+  width: 45%;
+  text-align: justify;
+  padding: 20px;
+}
+
+.ecommerce_text p, .ecommerce_info h1{
+  float: right;
+}

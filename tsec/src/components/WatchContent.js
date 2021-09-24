@@ -9,7 +9,7 @@ const WatchContent = () => {
 
 
   return (
-    <div className="container">
+    <div className="watch_content_container">
       {/* <DocumentMeta {...meta} /> */}
       <video className="slider" loop muted controls autoPlay>
         <source src="/Videos/vid-1.mp4" type="video/mp4" />
@@ -17,31 +17,31 @@ const WatchContent = () => {
 
       {/* Video slider ka links in an unordered list (below) */}
       <ul>
-        <li onClick="videoslider('/Videos/vid-1.mp4')">
+        <li onClick={() => videoslider('/Videos/vid-1.mp4')}>
           <video>
             <source src="/Videos/vid-1.mp4" type="video/mp4" />
           </video>
         </li>
 
-        <li onClick="videoslider('/Videos/vid-2.mp4')">
+        <li onClick={() => videoslider('/Videos/vid-2.mp4')}>
           <video>
             <source src="/Videos/vid-2.mp4" type="video/mp4" />
           </video>
         </li>
 
-        <li onClick="videoslider('/Videos/vid-3.mp4')">
+        <li onClick={() => videoslider('/Videos/vid-3.mp4')}>
           <video>
             <source src="/Videos/vid-3.mp4" type="video/mp4" />
           </video>
         </li>
 
-        <li onClick="videoslider('/Videos/vid-4.mp4')">
+        <li onClick={() => videoslider('/Videos/vid-4.mp4')}>
           <video>
             <source src="/Videos/vid-4.mp4" type="video/mp4" />
           </video>
         </li>
 
-        <li onClick="videoslider('/Videos/vid-5.mp4')">
+        <li onClick={() => videoslider('/Videos/vid-5.mp4')}>
           <video>
             <source src="/Videos/vid-5.mp4" type="video/mp4" />
           </video>

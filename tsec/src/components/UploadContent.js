@@ -6,7 +6,7 @@ const UploadContent = () => {
     <div>
       <center>
         <form>
-          <div className={styles.wrapper}>
+          <div className={styles.upload_content_border}>
             <div className={styles.title}>
               Upload Content
             </div>
@@ -21,11 +21,20 @@ const UploadContent = () => {
                 <label htmlFor="vid_desc">Description:</label>
                 <input type="text" id="vid_desc" placeholder="Video Description" />
               </div>
+              <br /><br />
 
-              <div className={styles.text_feild}>
-                <label htmlFor="video">Video:</label>
-                <input type="file" accept="video/*" id="video" />
+              {/* <div className={styles.text_feild}>
+                <label>Video:</label>
+              </div> */}
+
+              <div className={styles.file_input}>
+                <input type="file" accept="video/*" id="video" id="file" className={styles.file} />
+                <label for="file">
+                  Upload Video
+                  <p className={styles.file_name}></p>
+                </label>
               </div>
+              <br /><br /><br />
 
               <div className={styles.text_feild}>
                 <button type="submit" className={styles.add_patient_btn}>Upload</button>
@@ -36,24 +45,6 @@ const UploadContent = () => {
       </center>
 
     </div >
-
-    /* <section>
-
-      <form>
-        <label htmlFor="vid_title">Title</label>
-        <input type="text" id="vid_title" name="vid_title" placeholder="Your Video Title" />
-
-        <label htmlFor="vid_desc">Description</label>
-        <input type="text" id="vid_desc" placeholder="Video Description" />
-
-        <label htmlFor="video">Video</label>
-        <input type="file" accept="video/*" id="video" />
-
-        <input type="submit" value="Sign Up" />
-
-        
-  </form>
-    </section >  */
 
   );
 };

@@ -1,5 +1,8 @@
 import React from "react";
+import LogIn from "./LogIn";
 import styles from "./LogIn.module.css";
+import { Link } from "react-router-dom";
+
 
 const SignUp = () => {
   const onSubmitHandler = (event) => {
@@ -7,33 +10,36 @@ const SignUp = () => {
   };
 
   return (
-    <div className={styles.background}>
+    <div className={styles.signup_background}>
       <center>
         <p className={styles.title}>Sign Up </p><br />
-        <p className={styles.else_page}>Already a member? <u> Log in  </u></p>
+        <p className={styles.else_page}>Already a member? <u> <Link to="/login">Log in </Link> </u></p>
       </center>
 
-      <div className={styles.social_media}>
-        <button className={styles.Facebook}><a className={styles.social_med_link} >Log in with Facebook</a></button>
-        <button className={styles.Gmail}><a className={styles.social_med_link}>Log in with Gmail</a></button>
-      </div>
+      <section>
+        <span className={styles.form_image}>
+          <img src="https://images.all-free-download.com/images/graphicthumb/studio_work_background_working_man_filmstrip_computer_icons_6837659.jpg" />
+        </span>
 
-      <form onSubmit={onSubmitHandler}>
-        <div className={styles.container}>
-          <label htmlFor="user_type">User Type:</label>
-          <select id="user_type" name="user_type">
-            <option value="Inflencer">Inflencer</option>
-            <option value="Seller">Seller</option>
-          </select><br />
+        <span>
+          <form onSubmit={onSubmitHandler}>
+            <div className={styles.container}>
+              <input className={styles.first_input} type="text" id="username" name="username" placeholder="Your username.." />
+              <input type="email" id="email" name="email" placeholder="Your email id.." />
+              <input type="password" id="password" name="password" placeholder="Your password.." />
+              <input type="text" id="phone" name="phone" placeholder="Your phone no.." />
+              <input type="number" id="age" name="age" placeholder="Your age.." /><br />
 
-          <input className={styles.first_input} type="text" id="username" name="username" placeholder="Your username.." />
-          <input type="email" id="email" name="email" placeholder="Your email id.." />
-          <input type="password" id="password" name="password" placeholder="Your password.." />
-          <input type="text" id="phone" name="phone" placeholder="Your phone no.." />
-          <input type="number" id="age" name="age" placeholder="Your age.." /><br />
+              <br />
 
-          <div id="Inflencer" className={styles.extra_input}>
-            <input type="text" id="fees" name="fees" placeholder="Your fees.." /><br />
-          </div>
+              <button type="submit" className={styles.log_but}>Sign Up</button> <br />
 
-          <div id
+            </div>
+          </form>
+        </span>
+      </section>
+    </div>
+  );
+};
+
+export default SignUp;

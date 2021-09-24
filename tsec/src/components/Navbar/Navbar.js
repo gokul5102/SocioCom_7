@@ -27,7 +27,8 @@ const Navbar = () => {
             fontStyle: "-moz-initial",
           }}
         >
-          SOCIOCOM
+          SOCIOCOM<br />
+          <p>Video Content Platform</p>
         </Link>
 
         <Link
@@ -41,7 +42,7 @@ const Navbar = () => {
         >
           Home
         </Link>
-        {/*  <Link
+        <Link
           to="/watchcontent"
           style={{
             textDecoration: "none",
@@ -84,7 +85,7 @@ const Navbar = () => {
           }}
         >
           Sign Up
-        </Link> */}
+        </Link>
       </header>
     </Fragment >
   );

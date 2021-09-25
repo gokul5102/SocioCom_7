@@ -1,0 +1,158 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Order</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="{%static 'css/style.css'%}"
+      media="screen"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{%static 'css/navbar.css'%}"
+      media="screen"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{%static 'js/jquery.store.js'%}"
+    ></script>
+  </head>
+
+  <body>
+    <!-- id="checkout-page"> -->
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="topnav">
+          <div class="userportal">
+            <a
+              style="
+                font-size: 35px;
+                padding: 2px 16px;
+                color: white;
+                text-decoration: none;
+              "
+              class="active"
+              href="home.html"
+              >SOCIOCOM</a
+            >
+            <p style="text-align: center">
+              <a
+                style="
+                  text-decoration: none;
+                  background-color: #141e79;
+                  color: white;
+                "
+                href="index.html"
+                >E-Commerce Platform</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="cart.html">Cart</a>
+            </li>
+
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#about"
+                >About Us</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#services"
+                >Our Services</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <div id="site">
+      <header id="masthead">
+        <h1></h1>
+      </header>
+      <div id="content">
+        <h1>Your Order</h1>
+        <table id="checkout-cart" class="shopping-cart">
+          <thead>
+            <tr>
+              <th scope="col">Item</th>
+              <th scope="col">Qty</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div id="pricing">
+          <p id="shipping">
+            <strong>Shipping</strong>: <span id="sshipping"></span>
+          </p>
+
+          <p id="sub-total">
+            <strong>Total</strong>: <span id="stotal"></span>
+          </p>
+        </div>
+
+        <div id="user-details">
+          <h2>Your Data</h2>
+          <div id="user-details-content"></div>
+        </div>
+
+        <form id="paypal-form" action="" method="post">
+          <input type="hidden" name="cmd" value="_cart" />
+          <input type="hidden" name="upload" value="1" />
+          <input type="hidden" name="business" value="" />
+
+          <input type="hidden" name="currency_code" value="" />
+          <center>
+            <input
+              style="background-color: rgb(65, 128, 165)"
+              type="submit"
+              id="paypal-btn"
+              class="btn"
+              value="Pay with PayPal"
+            />
+          </center>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{%static 'css/login.css'%}"
+      media="screen"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{%static 'css/navbar.css'%}"
+      media="screen"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Sign Up</title>
+  </head>
+
+  <body>
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="topnav">
+          <div class="userportal">
+            <a
+              style="
+                font-size: 35px;
+                padding: 2px 16px;
+                color: white;
+                text-decoration: none;
+              "
+              class="active"
+              href="home.html"
+              >SOCIOCOM</a
+            >
+            <p style="text-align: center">
+              <a
+                style="
+                  text-decoration: none;
+                  background-color: #141e79;
+                  color: white;
+                "
+                href="upload_products.html"
+                >E-Commerce Platform</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="/ecom/signup"
+                >Sign Up</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="/ecom/login"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <div class="background">
+      <center>
+        <p class="title">Sign Up</p>
+        <br />
+        <p class="else_page">
+          Already a member?
+          <u>
+            <a href="/ecom/login">Login </a>
+          </u>
+        </p>
+      </center>
+
+      <section>
+        <span class="form_image">
+          <img
+            src="https://images.all-free-download.com/images/graphiclarge/ecommerce_background_shopping_design_elements_icons_6838055.jpg"
+          />
+        </span>
+
+        <span>
+          <form onSubmit="{onSubmitHandler}" method="post">
+            {% csrf_token %}
+            <div class="form_container">
+              <input
+                class="first_input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name.."
+              />
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email id.."
+              />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Your password.."
+              />
+              <input
+                type="text"
+                id="mobile_no"
+                name="mobile_no"
+                placeholder="Your mobile no.."
+              />
+              <input
+                class="first_input"
+                type="text"
+                id="organisation"
+                name="organisation_name"
+                placeholder="Your organisation.."
+              />
+              <input
+                class="first_input"
+                type="text"
+                id="gst_no"
+                name="gst_no"
+                placeholder="Your gst number.."
+              />
+
+              <br />
+
+              <button type="submit" class="log_but">Sign Up</button> <br />
+            </div>
+          </form>
+        </span>
+      </section>
+    </div>
+  </body>
+</html>

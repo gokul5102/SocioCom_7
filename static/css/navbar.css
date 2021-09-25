@@ -1,0 +1,92 @@
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+a{
+  text-decoration: none;
+  background-color: #141e79;
+}
+  .userportal p{
+    text-decoration: "none" ; 
+    color: white ;
+    font-family: "initial" ;
+    font-size: 21px;
+    font-style: "-moz-initial"; 
+  }
+  
+  /* Add a black background color to the top navigation bar */
+  .topnav {
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .nav-item a {
+    text-decoration: "none" ; 
+    float: left;
+    display: block;
+    text-align: center;
+    color:white;
+    padding: 26px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  
+  /* Style the "active" element to highlight the current page */
+  .topnav a.active {
+    background-color: #141e79;
+  }
+  
+  .navbarNav ul .li {
+    color: white;
+    background-color: black;
+  }
+  
+  .topnav a {
+    background-color: white;
+    font-size: 20px;
+  }
+  .navbar-brand img {
+    height: 100px;
+    padding-left: 0;
+  }
+  
+  .navbar-nav li {
+    padding: 0 10px;
+  }
+  
+  .navbar-nav li a {
+    float: right;
+    text-align: left;
+    font-size: 20px;
+  
+    background-color: #141e79;
+  }
+  
+  /* #nav-bar ul li a:hover {
+    color: #e1e4e7 !important;
+  } */
+  
+  .navbar {
+    background-color: #141e79;
+    margin-bottom: 20px;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-link {
+    color: #555 !important;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  #Slider {
+    width: auto;
+    height: 240px;
+  }
+  

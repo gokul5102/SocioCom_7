@@ -1,0 +1,168 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Shopping Cart</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="{%static 'css/style.css'%}"
+      media="screen"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{%static 'css/navbar.css'%}"
+      media="screen"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{%static 'js/jquery.store.js'%}"
+    ></script>
+  </head>
+
+  <body>
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="topnav">
+          <div class="userportal">
+            <a
+              style="
+                font-size: 35px;
+                padding: 2px 16px;
+                color: white;
+                text-decoration: none;
+              "
+              class="active"
+              href="/"
+              >SOCIOCOM</a
+            >
+            <p style="text-align: center">
+              <a
+                style="
+                  text-decoration: none;
+                  background-color: #141e79;
+                  color: white;
+                "
+                href="/ecom/get_products"
+                >E-Commerce Platform</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="/ecom/cart"
+                >Cart</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#about"
+                >About Us</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#services"
+                >Our Services</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <div id="bg">
+      <div id="site">
+        <!-- <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmPJDy9yl7hC-5YjpruJzGSHMYlJxx3qy5sA&usqp=CAU"
+      /> -->
+        <header id="masthead">
+          <!-- <h1></h1> -->
+        </header>
+        <div id="content">
+          <h1>Your Shopping Cart</h1>
+          <form id="shopping-cart" action="cart.html" method="post">
+            <table class="shopping-cart">
+              <thead>
+                <tr>
+                  <th scope="col">Item</th>
+                  <th scope="col">Qty</th>
+                  <th scope="col" colspan="2">Price</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <p id="sub-total">
+              <strong>Sub Total</strong>: <span id="stotal"></span>
+            </p>
+            <ul id="shopping-cart-actions">
+              <li>
+                <input
+                  style="background-color: rgb(65, 128, 165)"
+                  type="submit"
+                  name="update"
+                  id="update-cart"
+                  class="btn"
+                  value="Update Cart"
+                />
+              </li>
+              <li>
+                <input
+                  style="background-color: rgb(65, 128, 165)"
+                  type="submit"
+                  name="delete"
+                  id="empty-cart"
+                  class="btn"
+                  value="Empty Cart"
+                />
+              </li>
+              <li>
+                <a href="/ecom/get-products" class="btn">Continue Shopping</a>
+              </li>
+              <li>
+                <a href="/" class="btn">Go To Checkout</a>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer id="site-info">Copyright &copy;</footer> -->
+  </body>
+</html>

@@ -1,0 +1,70 @@
+/* Background */
+.signup_background{
+  margin-top: 100px;
+}  
+
+/* title and redirection to other page */
+.title{
+  margin-top:10px;
+  text-align: center;
+  width: 500px;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.else_page{
+  width: 250px;
+  font-size: 17px;
+}
+
+/* Image on left side of form */
+.form_image{
+  float: left;
+  /* margin: 120px; */
+  width: 50%;
+}
+
+.form_image img{
+  background-repeat: no-repeat;
+  width: 60%;
+  margin: 110px;
+}
+
+/* Form */
+.form_container {
+  padding: 25px;
+  width: 50%;
+  margin-top: 70px;
+  float: right;
+  height: 530px;
+  border-left: 2px solid #000080;
+}
+
+.form_container input[type=text], .form_container input[type=password], .form_container input[type=number], .form_container input[type=email] {
+  border:none;
+  width:400px;
+  font-size:18px;
+  margin: 5px;
+  margin-left: 60px;
+  padding: 12px 20px;
+  border-bottom: 2px solid black;
+}
+
+.log_but {
+  padding: 13px 30px;
+  text-align: center;
+  font-size: 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  width:150px;
+  border-radius:20px;
+  color: black;
+  margin-left:180px;
+  border: 2px solid #4285F4;
+}
+
+.log_but:hover {
+  background-color: #4285F4;
+  color: white;
+}

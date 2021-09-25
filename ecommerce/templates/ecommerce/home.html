@@ -1,0 +1,108 @@
+{%load static%}
+
+<!-- <link rel="stylesheet" href="{%static 'css/style.css'%}" media="screen" type="text/css" />
+	<link rel="stylesheet" href="{%static 'css/navbar.css'%}" media="screen" type="text/css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script type="text/javascript" src="{%static 'js/jquery.store.js'%}"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/home.css" />
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+    <title>Home pagee</title>
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a class="active" href="#home">SOCIOCOM</a>
+      <!-- <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a> -->
+    </div>
+    <div>
+      <section class="image_section">
+        <img
+          src="https://media.istockphoto.com/photos/businessman-holding-a-phone-with-a-shopping-icon-online-shopping-picture-id961335672?k=20&m=961335672&s=612x612&w=0&h=42jUlKb0DnC6evRj5YDiJekarxiXExgtKD9cUoPve_M="
+        />
+
+        <div class="text_on_image">
+          <h1>SocioCom</h1>
+          <p>A Video Content and an E-commerce platform</p>
+          <br /><br />
+
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">E-Commerce</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="upload_products.html">Seller</a>
+              <a href="index.html">User</a>
+            </div>
+          </div>
+          <button>Video Platform</button>
+        </div>
+      </section>
+      <br /><br />
+
+      <section class="services">
+        <h1>Our Services</h1>
+        <section class="video_content_info">
+          <span>
+            <img
+              src="https://wikipout.com/wp-content/uploads/2021/06/Sharing-Video-Content-With-The-World.jpg"
+            />
+          </span>
+
+          <span>
+            <div class="video_content_text">
+              <h1>Video Content Platform</h1>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
+                eiusmod
+              </p>
+            </div>
+          </span>
+        </section>
+
+        <section class="ecommerce_info">
+          <span>
+            <img
+              src="https://media.istockphoto.com/photos/shopping-online-concept-shopping-service-on-the-online-web-with-by-picture-id1133980246?k=20&m=1133980246&s=612x612&w=0&h=bwut2YUV7gtnjrv354523xU_9S-TtKQOqGTdiGMsPfs="
+            />
+          </span>
+
+          <span>
+            <div class="ecommerce_text">
+              <h1>E-commerce Platform</h1>
+              <p>We have implemented an E-commerce platform</p>
+            </div>
+          </span>
+        </section>
+        <br />
+        <br />
+      </section>
+    </div>
+  </body>
+</html>
